@@ -110,7 +110,7 @@ const useAuthStore = create((set, get) => {
 
       socket.connect();
 
-      set({ socket });
+      set({ socket: socket });
 
       socket.on("getOnlineUsers", (userIds) => {
         set({ onlineUsers: userIds });
