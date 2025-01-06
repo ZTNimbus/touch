@@ -47,7 +47,7 @@ function Sidebar() {
           </label>
 
           <span className="text-xs text-zinc-500">
-            {onlineUsers.length - 1} User(s) online
+            {onlineUsers?.length - 1 || 0} User(s) online
           </span>
         </div>
       </div>
